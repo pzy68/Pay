@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D17F025-2DD9-40C5-AEB5-52E6BA7F99EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestPay</RootNamespace>
+    <AssemblyName>TestPay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AkHelper">
+      <HintPath>F:\面试\BankInterface2\bin\Debug\AkHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banks\Alipay\AlipayConfig.cs" />
+    <Compile Include="Banks\Alipay\AlipayCore.cs" />
+    <Compile Include="Banks\Alipay\AlipayMD5.cs" />
+    <Compile Include="Banks\Alipay\AlipayNotify.cs" />
+    <Compile Include="Banks\Alipay\AlipaySubmit.cs" />
+    <Compile Include="Banks\Wechat\JSAPIConfig.cs" />
+    <Compile Include="Banks\Wechat\JSAPISumbit.cs" />
+    <Compile Include="InterfaceFactory.cs" />
+    <Compile Include="Models\CallBackArg.cs" />
+    <Compile Include="Models\CallBackRefundResult.cs" />
+    <Compile Include="Models\CallBackResult.cs" />
+    <Compile Include="Models\CallBacRefundkArg.cs" />
+    <Compile Include="Models\CreditArg.cs" />
+    <Compile Include="Models\CreditResult.cs" />
+    <Compile Include="Models\OukCode.cs" />
+    <Compile Include="Models\RefundArg.cs" />
+    <Compile Include="Models\RefundResult.cs" />
+    <Compile Include="PayCallBackInterface\AlipayCallBack.cs" />
+    <Compile Include="PayCallBackInterface\ICallBack.cs" />
+    <Compile Include="PayCallBackInterface\WechatCallBack.cs" />
+    <Compile Include="PayInterface\AlipayPayInterface.cs" />
+    <Compile Include="PayInterface\ICreditInterface.cs" />
+    <Compile Include="PayInterface\WechatInterface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\TestPay.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\TestPay.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TestPay.dll" />
+    <Content Include="obj\Debug\TestPay.exe" />
+    <Content Include="obj\Debug\TestPay.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

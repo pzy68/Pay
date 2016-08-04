@@ -1,0 +1,14 @@
+E:\projects\TestPay\TestPay\bin\Debug\TestPay.exe
+E:\projects\TestPay\TestPay\bin\Debug\TestPay.pdb
+E:\projects\TestPay\TestPay\obj\Debug\TestPay.exe
+E:\projects\TestPay\TestPay\obj\Debug\TestPay.pdb
+E:\projects\TestPay\TestPay\bin\Debug\AkHelper.dll
+E:\projects\TestPay\TestPay\bin\Debug\log4net.dll
+E:\projects\TestPay\TestPay\bin\Debug\Newtonsoft.Json.dll
+E:\projects\ss\TestPay\TestPay\bin\Debug\TestPay.dll
+E:\projects\ss\TestPay\TestPay\bin\Debug\TestPay.pdb
+E:\projects\ss\TestPay\TestPay\obj\Debug\TestPay.dll
+E:\projects\ss\TestPay\TestPay\obj\Debug\TestPay.pdb
+E:\projects\ss\TestPay\TestPay\bin\Debug\AkHelper.dll
+E:\projects\ss\TestPay\TestPay\bin\Debug\log4net.dll
+E:\projects\ss\TestPay\TestPay\bin\Debug\Newtonsoft.Json.dll
