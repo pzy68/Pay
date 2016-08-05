@@ -1,0 +1,7 @@
+E:\projects\Pay\Pay\bin\Debug\Pay.exe
+E:\projects\Pay\Pay\bin\Debug\Pay.pdb
+E:\projects\Pay\Pay\obj\Debug\Pay.exe
+E:\projects\Pay\Pay\obj\Debug\Pay.pdb
+E:\projects\Pay\Pay\bin\Debug\AkHelper.dll
+E:\projects\Pay\Pay\bin\Debug\log4net.dll
+E:\projects\Pay\Pay\bin\Debug\Newtonsoft.Json.dll

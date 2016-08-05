@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A7E1ED2-1ACE-4187-AE1B-AF925A9ABEBA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pay</RootNamespace>
+    <AssemblyName>Pay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AkHelper">
+      <HintPath>F:\面试\BankInterface2\bin\Debug\AkHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bll\Alipay\AlipayPayProcess.cs" />
+    <Compile Include="Bll\Wechat\WechatPayProcess.cs" />
+    <Compile Include="File\Alipay\Common.cs" />
+    <Compile Include="File\Alipay\Config.cs" />
+    <Compile Include="File\Alipay\ProvisionalMethod.cs" />
+    <Compile Include="File\Wechat\Common.cs" />
+    <Compile Include="File\Wechat\Config.cs" />
+    <Compile Include="File\Wechat\ProvisionalMethod.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="Models\Alipay\AliPayCallBackArg.cs" />
+    <Compile Include="Models\Alipay\AlipayCallBackRefundResult.cs" />
+    <Compile Include="Models\Alipay\AlipayCallBackResult.cs" />
+    <Compile Include="Models\Alipay\AlipayCallBacRefundkArg.cs" />
+    <Compile Include="Models\Alipay\AlipayCreditArg.cs" />
+    <Compile Include="Models\Alipay\AlipayCreditResult.cs" />
+    <Compile Include="Models\Alipay\AlipayRefundArg.cs" />
+    <Compile Include="Models\Alipay\AlipayRefundResult.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Wechat\WechatCallBackArg.cs" />
+    <Compile Include="Models\Wechat\WechatCallBackResult.cs" />
+    <Compile Include="Models\Wechat\WechatCodeArg.cs" />
+    <Compile Include="Models\Wechat\WechatCreditArg.cs" />
+    <Compile Include="Models\Wechat\WechatCreditResult.cs" />
+    <Compile Include="PayInterface\BaseInterface.cs" />
+    <Compile Include="PayInterface\WechatInterface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
