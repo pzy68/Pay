@@ -11,7 +11,7 @@ namespace Pay
     {
         static void Main(string[] args)
         {
-            var sp = Interface.GetResult((int)Enums.BrankType.支付宝, (int)Enums.BrankAction.支付, new AlipayCreditArg() { });
+         //   var sp = Interface.GetResult((int)Enums.BrankType.支付宝, (int)Enums.BrankAction.支付, new AlipayCreditArg() { });
             
 
         }

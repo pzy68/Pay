@@ -53,7 +53,6 @@
     <Compile Include="File\Wechat\Common.cs" />
     <Compile Include="File\Wechat\Config.cs" />
     <Compile Include="File\Wechat\ProvisionalMethod.cs" />
-    <Compile Include="Interface.cs" />
     <Compile Include="Models\Alipay\AliPayCallBackArg.cs" />
     <Compile Include="Models\Alipay\AlipayCallBackRefundResult.cs" />
     <Compile Include="Models\Alipay\AlipayCallBackResult.cs" />
