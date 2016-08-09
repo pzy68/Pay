@@ -34,7 +34,7 @@ namespace Pay
             #region 微信
 
             //创建微信接口对象
-            BaseInterface wechatPay = new AlipayPayProcess();
+            BaseInterface wechatPay = new WechatPayProcess();
 
             //支付
             wechatPay.Pay(new object()); //参数：WechatCreditArg对象，结果:WechatCreditResult对象
